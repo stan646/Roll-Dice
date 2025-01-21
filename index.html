@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Dice Roller</h1>
+        <label for="">Number of Dice:</label><br>
+        <input type="number" name="" id="numofDice" value="0" min="1"><br>
+        <button onclick="rollDice();">Roll Dice</button>
+        <div id="result"></div>
+        <div id="result-images"></div>
+        <button id="reset" onclick="reset();">Reset</button>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+    #container{
+        font-family: Arial, sans-serif;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    h1{
+        font-size: 1.4rem;
+    }
+
+    #container > #reset{
+        color: red;
+        background-color: black;
+    }
+
+    button{
+        font-size: 1.5rem;
+        padding: 10px 15px;
+        border-radius: 10px;
+        border: none;
+        background-color: hsl(210, 100%, 50%);
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 12px;
+    }
+
+    input{
+        font-size: 2rem;
+        width: 150px;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 22px;
+        margin-top: 12px;
+    }
+
+    label{
+        font-size: 18px;
+    }
+
+
+    #result{
+        margin: 30px;
+    }
+    #result-images img{
+        width: 90px;
+        margin: 8px;
+    }
+</style>
